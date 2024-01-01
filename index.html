@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>AI Generator</title>
   </head>
   <body>
     <div class="container">
       <h1>Welcome to the AI Generator!</h1>
-      <form>
+      <form id="form">
         <input
           type="text"
           placeholder="Enter the topic"
@@ -20,7 +22,7 @@
         />
         <input type="submit" class="submit-button" />
       </form>
-      <div class="content">The text will go here</div>
+      <div class="content" id="content"></div>
 
       <footer>
         This AI project was coded by Tracey Reis and is open sourced on
@@ -34,6 +36,6 @@
         >
       </footer>
     </div>
-    <script src="indes.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
